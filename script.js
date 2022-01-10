@@ -55,15 +55,17 @@ function handleClick (e) {
     if (checkWin(currentClass)) {
         endGame(false);
     }
+    //Check for draw
     else if(isDraw()){
         endGame(true);
+    //Switch turns
     }else {
         swapTurns();
         setBoardHover();
     }
     }
-    //Check for draw
-    //Switch turns
+    
+    
 
 
 const placeMark = (cell, currentClass) => {
